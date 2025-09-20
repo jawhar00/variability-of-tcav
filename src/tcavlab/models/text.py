@@ -28,7 +28,8 @@ def choose_text_model(key: str, device: torch.device | None = None):
 
     L = getattr(model.config, "num_hidden_layers", 6)
     picks = sorted(set([max(1, L//3), max(1, 2*L//3), L]))
-    layer_names = [f"hidden_{i}" for i in picks]
+    layer_names = [f"bert_encoder_{i}" for i in picks]
+    # layer_names = [model. for i in picks]
     layer_indices = picks
     return model, layer_indices, layer_names, tok, device
 
