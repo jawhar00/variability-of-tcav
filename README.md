@@ -6,7 +6,7 @@ We provide notebooks and a clean framework to explore the variability of TCAV on
 ## Layout
 ```
 tcavlab_ready/
-├─ src/tcavlab/         # package (importable via the notebook shim)
+├─ src/tcavlab/         
 │  ├─ __init__.py
 │  ├─ activations.py
 │  ├─ analysis_utils.py
@@ -16,9 +16,9 @@ tcavlab_ready/
 │  ├─ datasets/images.py
 │  ├─ metrics.py
 │  ├─ models/vision.py
-│  └─ plots.py          # your styling; plot_variance_vs_n == plot_stability_vs_n
+│  └─ plots.py          
 └─ notebooks/
-   └─ 01_images.ipynb   # ready to run (uses import shim, caching, your plots)
+   └─ 01_images.ipynb   
 ```
 
 ## How to run
